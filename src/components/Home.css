@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mulish&family=PT+Serif&family=Poppins&family=Zen+Kaku+Gothic+New&display=swap');
+.body {
+    background-color: rgb(24, 23, 23);
+    color: #fff;
+    font-family: 'Mulish';
+    overflow: hidden;
+}
+/*navigation bar*/
+.sectionOneTitle {
+    text-align: center;
+}
+
+
+/*recommanded movies*/
+.mainShowcase {
+    width: 375vw;
+    display: flex;
+    transition: transform .5s;
+}
+.loading {
+    color: #fff;
+}
+.movieLink {
+    text-decoration: none;
+    color: #fff;
+}
+.movieBox {
+    position: relative;
+    width: 25vw;
+    z-index: 1;
+    box-shadow: .3em .3em 1em #fff;
+    border-radius: 1em;
+    margin: 2em 2em;
+}
+.movieBox:hover {
+    box-shadow: .3em .3em 2em #fff;
+    transition: .3s;
+}
+.movieImage {
+    width: 100%;
+    border-radius: .8em .8em 0 0;
+}
+.movieLink h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    padding-top: 1em;
+}
+
+/*moving button*/
+.moveLeft, .moveRight {
+    position: absolute;
+    top: 60%;
+    z-index: 2;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+.moveLeft {
+    left: 2em;
+}
+.moveRight {
+    right: 2em;
+}
+
+/*search by genre*/
+.sectionTwoTitle {
+    text-align: center;
+}
+.movieByGenres form {
+    margin-top: 5em;
+    text-align: center;
+}
+.movieByGenres input {
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.movieByGenres input::placeholder {
+    font-size: 25px;
+}
+.movieByGenres input[type=text] {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.movieByGenres input:focus {
+    outline: none;
+}
+.genresEmpty {
+    text-align: center;
+    font-size: 25px;
+    margin: 2em 1em;
+    padding: 10em 0;
+    border-top: 2px solid #fff;
+}
+.genreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 1em;
+    border-top: 2px solid #fff;
+    justify-content: center;
+}
+.movieGenreBox {
+    width: 20vw;
+    text-align: center;
+    box-shadow: .3em .3em 1em #fff;
+    border-radius: 1em;
+    margin: 2em 1em;
+}
+.movieGenreBox:hover {
+    box-shadow: .3em .3em 2em #fff;
+    transition: .3s;
+}
+.movieGenreImage {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+.movieLink h1 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 1025px) {
+    .movieBox {
+        margin: 2em 1em;
+    }
+    .movieLink h1 {
+        font-size: 18px;
+    }
+
+    .moveLeft, .moveRight {
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .mainShowcase {
+        width: 495vw;
+    }
+    .movieBox {
+        width: 33vw;
+        margin: 2em 1em;
+    }
+    .movieLink h1 {
+        font-size: 15px;
+    }
+
+    .movieGenreBox {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .mainShowcase {
+        width: 1500vw;
+    }
+    .movieBox {
+        width: 100vw;
+        margin: 2em 5em;
+    }
+    .movieLink h1 {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+
+    .moveLeft {
+        left: 1em;
+    }
+    .moveRight {
+        right: 1em;
+    }
+
+    .movieByGenres input {
+        width: 350px;
+    }
+    .movieGenreBox {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .movieBox {
+        margin: 2em 3em;
+    }
+
+    .movieByGenres input {
+        width: 300px;
+    }
+    .movieGenreBox {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 321px) { 
+    .movieBox {
+        margin: 2em 1.5em;
+    }
+
+    .movieByGenres input {
+        width: 280px;
+    }
+}

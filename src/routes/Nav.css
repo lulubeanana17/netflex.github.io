@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mulish&family=PT+Serif&family=Poppins&family=Zen+Kaku+Gothic+New&display=swap');
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Mulish';
+}
+.homeTitle {
+    margin-left: 18px;
+    font-size: 40px;
+    color: rgb(255, 29, 29);
+    cursor: pointer;
+    text-decoration: none;
+}
+.signTitle {
+    margin-right: 2em;
+    font-size: 20px;
+    border-radius: 1em;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #fff;
+    padding: .3em .5em;
+    text-decoration: none;
+}
+.signTitle:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: .3s;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+@media only screen and (max-width: 426px) {
+    .signTitle {
+        font-size: 15px;
+    }
+}
